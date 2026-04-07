@@ -40,7 +40,7 @@ route.put('/:id', (req, res) => {
 
     if (resultado) {
         // Se você quer que apareça DIRETO o objeto no Thunder:
-        return res.json(resultado); 
+        return res.json(resultado);
     } else {
         return res.status(404).json({ message: "Fruta não encontrada!" });
     }
