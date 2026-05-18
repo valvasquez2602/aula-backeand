@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev" : "node --wach ./src/server.js"
+  },
+
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
+

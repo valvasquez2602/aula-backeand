@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>App de Notas</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 20px auto; background: #f4f4f4; }
+        .nota { background: white; padding: 15px; margin-bottom: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+        input, textarea { padding: 8px; }
+        button { cursor: pointer; padding: 5px 10px; margin-right: 5px; }
+        .btn-delete { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Minhas Notas</h2>
+    <form id="notaForm">
+        <input type="hidden" id="notaId">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <textarea id="conteudo" placeholder="Conteúdo" required></textarea>
+        <button type="submit">Salvar Nota</button>
+    </form>
+    <div id="listaNotas"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
