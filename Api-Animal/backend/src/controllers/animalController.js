@@ -1,4 +1,4 @@
-import animalService from "../services/animalService.js"
+import {animalService} from "../services/animalService.js"
 
 export const animalController = {
     async getAll(req, res){
