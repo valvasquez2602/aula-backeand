@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pagina simples</title>
+</head>
+
+<body>
+    <h1>Bem-vindo</h1>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+
+            <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Nome de Usuario</b></label>
+                <input type="text" placeholder="Digite seu nome" name="uname" required>
+
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="Digite sua senha" name="psw" required>
+
+                <button type="submit">Logar</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Aceito os termos de uso
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancelar</button>
+                <span class="psw"> Esqueceu a <a href="#">senha?</a></span>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
