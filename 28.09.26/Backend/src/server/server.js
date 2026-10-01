@@ -5,9 +5,9 @@ import usuarioRoutes from '../routes/usuarioRoute.js';
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors()); 
 
-app.use(usuarioRoutes);
+app.use('/usuario', usuarioRoutes);
 
 const PORTA = 3000;
 
