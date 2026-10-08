@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    fetch('http://localhost:3000/filmes/lista')
+    fetch('http://localhost:3000/usuario/filmes/lista')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Falha ao buscar filmes no banco de dados');

@@ -12,44 +12,31 @@ body {
 .navbar {
     height: 75px;
     background-color: #4e5d80 !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #3d4a66;
 }
 
 .custom-logo-btn {
-    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    background-color: #ffffff;
     color: #4e5d80;
-    font-weight: 700;
-    border-radius: 0.75rem;
-    padding: 0.4rem 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.35rem 1rem;
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
-}
-
-.custom-logo-btn:hover {
-    transform: scale(1.03);
-    color: #4e5d80;
 }
 
 .search-bar-placeholder {
-    width: 280px;
-    height: 38px;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 0.75rem;
-    margin-left: 1.5rem;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 250px;
+    height: 34px;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
 }
 
 .profile-icon {
-    width: 42px;
-    height: 42px;
-    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
-    color: #4e5d80;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
     border-radius: 50%;
-    font-size: 1.2rem;
 }
 
 .sidebar {
@@ -59,7 +46,7 @@ body {
     bottom: 0;
     width: 260px;
     background-color: #4e5d80 !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 2px solid #3d4a66;
     z-index: 1030;
     transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -70,27 +57,26 @@ body {
 
 .main-content {
     margin-top: 120px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .movie-card {
     background-color: #4e5d80;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 2px solid #ffffff;
     border-radius: 1.5rem;
     cursor: pointer;
-    min-height: 200px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+    min-height: 240px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .movie-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .movie-item {
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), max-width 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .movie-item.expanded {
@@ -104,36 +90,16 @@ body {
 }
 
 .active-link {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-radius: 0.75rem;
-    font-weight: 600;
-}
-
-.nav-link {
-    transition: all 0.2s ease;
-    padding: 0.6rem 1rem;
-}
-
-.nav-link:hover:not(.active-link) {
-    color: #ffffff !important;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 0.75rem;
-}
-
-.badge-genre {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #ffffff;
-    font-size: 0.75rem;
-    padding: 0.35rem 0.75rem;
+    background-color: #3d4a66;
     border-radius: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
 }
 
 .movie-details-inline {
-    animation: fadeIn 0.3s ease forwards;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
+    from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
